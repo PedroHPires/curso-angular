@@ -1,4 +1,4 @@
-class Pessoa {
+class Pessoa1 {
     nome: string;
     idade: number;
     pessoa: boolean = true;
