@@ -1,6 +1,6 @@
 class Pessoa {
-    private nome: string;
-    private idade: number;
+    nome: string;
+    idade: number;
 
     constructor(nome: string, idade: number){
         this.nome = nome;
@@ -15,4 +15,14 @@ class Pessoa {
 };
  const pessoa = new Pessoa("Pedro Henrique", 19);
 
+ class Funcionario extends Pessoa {
+    cadastro: number;
+    constructor(nome: string, idade: number, cadastro: number){
+        super(nome, idade);
+        this.cadastro = cadastro;
+    }
+ };
+  const joão = new Funcionario("João", 25, 354423);
+
+  console.log(joão.cadastro);
  
