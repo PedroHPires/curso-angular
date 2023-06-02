@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class TitleComponent {
   public title: string = "Bem vindo 2";
+  cons
 }

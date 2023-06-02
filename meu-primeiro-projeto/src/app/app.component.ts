@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<router-outlet></router-outlet><app-title></app-title>',
 })
+
 export class AppComponent {
-  public title:string = "Muito Bem vindo ao Angular"
+  constructor(){}
+  ngOnInit() : void {
+    setTimeout(() => {
+      console.log(1)
+    },5000)
+  }
 }
